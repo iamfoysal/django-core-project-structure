@@ -1,6 +1,6 @@
 ```bash
 
-project_name/
+core/
 ├── config/                                  # Django core settings and startup
 │   ├── __init__.py
 │   ├── asgi.py
@@ -11,7 +11,7 @@ project_name/
 │       ├── base.py                          # Shared settings
 │       ├── local.py                         # Local development settings
 │       └── production.py                    # Production settings
-
+|
 ├── apps/                                    # All Django apps go here
 │   ├── __init__.py
 │   ├── user/                                # Sample app (repeat this structure)
@@ -73,17 +73,17 @@ project_name/
 |
 ├── templates/                               # Shared templates (if applicable)
 │   └── base.html
-
+|
 ├── static/                                  # Static files
 │   └── css/
-
+|
 ├── media/                                   # Media file uploads
-
+|
 ├── assets/                                  # Additional frontend/static assets
 │   ├── images/
 │   ├── fonts/
 │   └── svg/
-
+|
 ├── compose/                                 # Docker-specific configurations
 │   ├── local/
 │   │   ├── django/
@@ -103,21 +103,21 @@ project_name/
 │   │   │   └── Dockerfile
 │   │   └── env/
 │   │       └── django.env
-
+|
 ├── docker-compose.yml                       # Local development
 ├── docker-compose.override.yml              # Override for local only
 ├── docker-compose.staging.yml               # Staging environment
 ├── docker-compose.prod.yml                  # Production environment
-
+|
 ├── requirements/                            # Environment-based Python deps
 │   ├── base.txt
 │   ├── local.txt
 │   └── production.txt
-
+|
 ├── .env.dev                                 # Local .env file
 ├── .env.staging                             # Staging .env
 ├── .env.production                          # Production .env
-
+|
 ├── .pre-commit-config.yaml                  # Code quality tools config
 ├── pyproject.toml                           # black, mypy, isort, etc.
 ├── pytest.ini                               # Pytest config
