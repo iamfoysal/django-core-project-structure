@@ -29,6 +29,7 @@ core/
 │       ├── base.py                          # Shared settings
 │       ├── local.py                         # Local development settings
 │       └── production.py                    # Production settings
+|
 ├── apps/                                    # All Django apps go here
 │   ├── __init__.py
 │   ├── user/                                # Sample app (repeat this structure)
@@ -68,6 +69,7 @@ core/
 │   │       ├── test_models.py
 │   │       ├── test_views.py
 │   │       └── test_services.py
+|
 ├── common/
 │   ├── __init__.py
 │   ├── base_model.py               # Abstract base model
@@ -86,15 +88,20 @@ core/
 │   │   └── __init__.py
 │   ├── utils.py
 │   └── base_repository.py
+|
 ├── templates/                               # Shared templates (if applicable)
 │   └── base.html
+|
 ├── static/                                  # Static files
 │   └── css/
+|
 ├── media/                                   # Media file uploads
+|
 ├── assets/                                  # Additional frontend/static assets
 │   ├── images/
 │   ├── fonts/
 │   └── svg/
+|
 ├── compose/                                 # Docker-specific configurations
 │   ├── local/
 │   │   ├── django/
@@ -109,11 +116,13 @@ core/
 │   │   │   └── Dockerfile
 │   │   └── env/
 │   │       └── django.env
+|
 │   ├── production/
 │   │   ├── django/
 │   │   │   └── Dockerfile
 │   │   └── env/
 │   │       └── django.env
+|
 ├── docker-compose.yml                       # Local development
 ├── docker-compose.override.yml              # Override for local only
 ├── docker-compose.staging.yml               # Staging environment
