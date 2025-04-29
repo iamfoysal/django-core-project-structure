@@ -1,0 +1,5 @@
+-r base.txt
+ipython
+django-debug-toolbar
+pytest-django
+factory_boy
